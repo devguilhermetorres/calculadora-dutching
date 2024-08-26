@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Dutching</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="imgs/icon.png">
+</head>
+<body>
+
+    <main>
+        <div class="top">
+            <div class="text">
+                <h1>Calculadora Dutching</h1>
+                <p>Por github.com/devguilhermetorres</p>
+            </div>
+
+            <div id="messages">
+            </div>
+        </div>
+
+        <!-- MOBILE -->
+
+        <table class="mobile" id="table-mobile">
+            <form id="calc-mobile">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Odds</td>
+                        <td><input type="text" placeholder="0" id="odd-1-mobile" class="odd" required></td>
+                        <td><input type="text" placeholder="0" id="odd-2-mobile" class="odd" required></td>
+                        <td><input type="text" placeholder="0" id="odd-3-mobile" class="odd"></td>
+                        <td><input type="text" placeholder="0" id="odd-4-mobile" class="odd"></td>
+                    </tr>
+                    <tr>
+                        <td>% Prob.</td>
+                        <td><div id="percent-stakeA-mobile" class="prob">%</div></td>
+                        <td><div id="percent-stakeB-mobile" class="prob">%</div></td>
+                        <td><div id="percent-stakeC-mobile" class="prob">%</div></td>
+                        <td><div id="percent-stakeD-mobile" class="prob">%</div></td>
+                    </tr>
+                    <tr>
+                        <td>A apostar</td>
+                        <td><div id="result-stakeA-mobile" class="result-stake">0.00</div></td>
+                        <td><div id="result-stakeB-mobile" class="result-stake">0.00</div></td>
+                        <td><div id="result-stakeC-mobile" class="result-stake">0.00</div></td>
+                        <td><div id="result-stakeD-mobile" class="result-stake">0.00</div></td>
+                    </tr>
+                    <tr>
+                        <td>Resultado</td>
+                        <td colspan="4" id="divresult-mobile"><div id="result-mobile">0.00</div></td>
+                    </tr>
+                    <tr >
+                        <td>% Lucro</td>
+                        <td colspan="4" id="divpercentage-mobile"><div id="percentage-mobile">0.00 %</div></td>
+                    </tr>
+                    <tr>
+                        <td class="last-line"></td>
+                        <td class="last-line" colspan="2"><input type="text" placeholder="Total" id="total-mobile" required></td>
+                        <td class="button-calcular" colspan="2"><input type="submit" value="Calcular" id="calcular-mobile" class="calcular"></td>
+                        
+                    </tr>
+                </tbody>
+            </form>
+        </table>
+
+        <div id="messages-mobile">
+        </div> 
+
+        <!-- DESKTOP -->
+
+        <table class="desktop" id="table-desktop">
+            <form id="calc">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Odds</th>
+                        <th>% Probabilidade</th>
+                        <th>Valor a apostar</th>
+                        <th>Resultado</th>
+                        <th>% de Lucro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Aposta 1</td>
+                        <td><input type="text" placeholder="0" id="odd-1" class="odd" required></td>
+                        <td><div id="percent-stakeA" class="prob">%</div></td>
+                        <td><div id="result-stakeA" class="result-stake">0.00</div></td>
+                        <td rowspan="4" id="divresult"><div id="result">0.00</div></td>
+                        <td rowspan="4" id="divpercentage"><div id="percentage">0.00 %</div></td>
+                    </tr>
+                    <tr>
+                        <td>Aposta 2</td>
+                        <td><input type="text" placeholder="0" id="odd-2" class="odd" required></td>
+                        <td><div id="percent-stakeB" class="prob">%</div></td>
+                        <td><div id="result-stakeB" class="result-stake">0.00</div></td>
+                    </tr>
+                    <tr>
+                        <td>Aposta 3</td>
+                        <td><input type="text" placeholder="0" id="odd-3" class="odd"></td>
+                        <td><div id="percent-stakeC" class="prob">%</div></td>
+                        <td><div id="result-stakeC" class="result-stake">0.00</div></td>
+                    </tr>
+                    <tr>
+                        <td>Aposta 4</td>
+                        <td><input type="text" placeholder="0" id="odd-4" class="odd"></td>
+                        <td><div id="percent-stakeD" class="prob">%</div></td>
+                        <td><div id="result-stakeD" class="result-stake">0.00</div></td>
+                    </tr>
+                    <tr >
+                        <td class="last-line"></td>
+                        <td class="last-line"></td>
+                        <td class="last-line"><input type="text" placeholder="Total" id="total" required></td>
+                        <td class="button-calcular"><input type="submit" value="Calcular" id="calcular" class="calcular"></td>
+                        <td class="last-line"></td>
+                        <td class="last-line"></td>
+                    </tr>
+                </tbody>
+            </form>
+        </table>
+    
+
+    <div class="how-it-works">
+        <h2>Como a calculadora de apostas funciona?</h2>
+        <p>Poder calcular até que ponto uma aposta pode ser lucrativa é um dos princípios básicos das apostas e a calculadora de apostas simplifica esse processo para os apostadores. Na prática, você verá que é muito fácil utilizar a calculadora dutching no dia a dia. Ela é dividida em colunas e linhas, e cada uma delas conta com uma função específica. <br><br>
+
+        O tipo mais comum de aposta é a aposta simples, mas os apostadores também podem combinar variadas apostas e fazer uma aposta múltipla na calculadora dutching, por exemplo. Para usá-la:<br><br>
+            
+        • O primeiro passo é você <b>colocar as odds</b> que desejar nos lugares indicados (odds 1, odds 2 e assim por diante).<br>
+        • Feito isso, basta digitar o valor em unidades monetárias que será a aposta na parte inferior da calculadora dutching em <b>"Quantidade total a apostar"</b> .<br>
+        • Depois clique em <b>"calcular"</b> .<br><br>
+        Após clicar em “calcular”, a calculadora de apostas seguras simulará para você as melhores soluções para apostar. A coluna 2 nada mais é que a probabilidade de chances de êxito de acordo com a odd inseridas na coluna 1.
+        </p>
+
+        <h2>Exemplo prático de uso da Calculadora Dutching</h2>
+        <p>Por exemplo, em uma odd de 1.80 a probabilidade de êxito é de 55%. Já a terceira coluna indicará o quanto você deve apostar em determinada com base no seu investimento (valor total da aposta).<br><br>
+
+        Se o resultado final do cálculo estiver na cor vermelha, isto indicará perdas. Agora, <b>se o resultado for verde, estamos falando em uma aposta segura.</b> O “resultado” é o valor final perdido ou ganho em unidades (stake) já a “% lucro” é a porcentagem do crescimento de banca que determinada aposta acrescentará.
+        </p>
+
+        <h2>Calcular apostas no modelo 1x2?</h2>
+        <p>São as apostas mais comuns no meio do futebol. Nesse molde, você deve colocar os valores da vitória do time mandante, do empate e da vitória do visitante em linhas diferentes de odds. Feito isso e após colocar o valor da aposta, basta clicar em “calcular” para verificar se é uma aposta segura.<br><br>
+
+        Vamos imaginar um confronto entre Internacional e Atlético Mineiro pelo Campeonato Brasileiro com o seguinte cenário: as odds para uma vitória Internacional é de 2.55, o valor das odds de empate é de 3.90 e as odds para o Atlético Mineiro vencer estão em 2.90. Além disso, serão investidas 50 unidades monetárias (que serão divididas nos três mercados de acordo com as probabilidades).<br><br>
+            
+        • Na opção 1, vitória do Internacional, você deve apostar um total de 19.74 unidades.<br>
+        • Na opção 2, empate, o valor é 12.91 unidades.<br>
+        • Na opção 3, vitória do Atlético Mineiro, você tem que apostar 17.36 unidades.<br><br>
+
+        Sendo assim, os benefícios são de 0.34 unidades positivas na banca e de 0.67 % de crescimento de banca. Além disso, com essa combinação você não perderia dinheiro. <br><br>
+            
+        E se fosse um evento com apenas duas opções? Bastaria realizar o mesmo procedimento, e você colocaria as odds somente em dois mercados ao invés de introduzir em três como no exemplo anterior.</p>
+
+    </div>
+    </main>
+
+    <footer>
+        <div class="footer-infos">
+            <p>© Copyright 2024 github.com/devguilhermetorres</p>
+            
+            <div>
+            
+            <a href="https://github.com/devguilhermetorres" target="_blank" style="text-decoration: none;">
+                <img src="imgs/icons8-github.svg" alt="" style="width: 30px;">
+            </a>
+
+            <a href="https://www.linkedin.com/in/guilherme-torres-65a37b301/" target="_blank" style="text-decoration: none;">
+                <img src="imgs/icons8-linkedin.svg" alt="" style="width: 30px;">
+            </a>
+            
+            </div>
+        </div>
+        
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="scriptmobile.js"></script>
+    
+
+</body>
+</html>
