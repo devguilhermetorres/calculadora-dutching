@@ -500,7 +500,7 @@ footer {
         border-radius: 0px 3px 3px 0px;
         padding: 8px;
         font-size: 12px;
-        font-weight: 400;
+        font-weight: 500;
     }
     
     .calcular:hover {
@@ -581,7 +581,7 @@ footer {
     
     .footer-infos p {
         margin: 0;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 400;
         color: #6d6d6d;
         width: 65%;
