@@ -196,7 +196,7 @@ tr:nth-child(even) {
 }
 
 .calcular {
-    background-color: rgb(0, 85, 255);
+    background-color: #2c3ec4;
     width: 100%;
     padding: 8px 10px 8px 10px;
     border: none;
@@ -207,7 +207,7 @@ tr:nth-child(even) {
 }
 
 .calcular:hover {
-    background-color: rgb(1, 77, 228);
+    background-color: #2031b1;
     cursor: pointer;
 }
 
@@ -489,7 +489,7 @@ footer {
     }
     
     .calcular {
-        background-color: rgb(0, 85, 255);
+        background-color: #2c3ec4;
         width: 90%;
         float: left;
         text-align: center;
@@ -504,7 +504,7 @@ footer {
     }
     
     .calcular:hover {
-        background-color: rgb(1, 77, 228);
+        background-color: #2c3ec4;
         cursor: pointer;
     }
     
