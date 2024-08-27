@@ -588,14 +588,14 @@ footer {
     }
     
     .footer-infos img {
-        opacity: 0.85;
+        opacity: 1;
         transition: opacity 0.3s;
         padding-left: 10px;
         width: 25px;
     }
     
     .footer-infos img:hover {
-        opacity: 0.85;
+        opacity: 1;
         transition: opacity 0.3s;
         padding-left: 10px;
         width: 20px;
