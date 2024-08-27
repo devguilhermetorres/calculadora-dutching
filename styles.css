@@ -292,6 +292,7 @@ footer {
     opacity: 0.85;
     transition: opacity 0.3s;
     padding-left: 10px;
+    width: 30px;
 }
 
 .footer-infos img:hover {
@@ -300,7 +301,10 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-
+    
+    main {
+        padding-top: 80px;
+    }
     .top {
         display: flex;
         justify-content: space-between;
@@ -439,6 +443,7 @@ footer {
     .odd {
         width: 90%;
         padding: 5px;
+        padding-right: 0;
         border: none;
         background-color: #fafafa;
         color: #171717;
@@ -495,6 +500,7 @@ footer {
         border-radius: 0px 3px 3px 0px;
         padding: 8px;
         font-size: 12px;
+        font-weight: 400;
     }
     
     .calcular:hover {
@@ -549,5 +555,49 @@ footer {
         font-weight: 400;
         color: #6d6d6d;
         font-size: 13px;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        max-width: 1600px;
+        height: auto;
+    }
+    
+    .footer-infos {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-top: 1px solid #6d6d6d;
+        width: 70%;
+        display: flex;;
+        justify-content: space-between;
+        align-items: left;
+        margin: auto;
+        height: auto;
+    }
+    
+    .footer-infos p {
+        margin: 0;
+        font-size: 12px;
+        font-weight: 400;
+        color: #6d6d6d;
+        width: 65%;
+    }
+    
+    .footer-infos img {
+        opacity: 0.85;
+        transition: opacity 0.3s;
+        padding-left: 10px;
+        width: 25px;
+    }
+    
+    .footer-infos img:hover {
+        opacity: 0.85;
+        transition: opacity 0.3s;
+        padding-left: 10px;
+        width: 20px;
     }
 }
