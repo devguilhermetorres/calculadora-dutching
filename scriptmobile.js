@@ -187,7 +187,7 @@
                     }
 
                     mob_messages.style.display = "flex";
-                    mob_messages.style.backgroundColor = '#171717'
+                    mob_messages.style.backgroundColor = '#272727'
                     mob_messages.textContent = "Cálculo realizado! (2 Odds)";
 
                     return
@@ -320,7 +320,7 @@
                     }
                     
                     mob_messages.style.display = "flex";
-                    mob_messages.style.backgroundColor = '#171717'
+                    mob_messages.style.backgroundColor = '#272727'
                     mob_messages.textContent = "Cálculo realizado! (3 Odds)";
 
                     return
@@ -451,7 +451,7 @@
                     }
 
                     mob_messages.style.display = "flex";
-                    mob_messages.style.backgroundColor = '#171717'
+                    mob_messages.style.backgroundColor = '#272727'
                     mob_messages.textContent = "Cálculo realizado! (4 Odds)";
 
                     return

@@ -187,7 +187,7 @@
                     }
 
                     messages.style.display = "flex";
-                    messages.style.backgroundColor = '#171717'
+                    messages.style.backgroundColor = '#272727'
                     messages.textContent = "Cálculo realizado! (2 Odds)";
 
                     return
@@ -317,7 +317,7 @@
                     }
                     
                     messages.style.display = "flex";
-                    messages.style.backgroundColor = '#171717'
+                    messages.style.backgroundColor = '#272727'
                     messages.textContent = "Cálculo realizado! (3 Odds)";
 
                     return
@@ -446,7 +446,7 @@
                     }
 
                     messages.style.display = "flex";
-                    messages.style.backgroundColor = '#171717'
+                    messages.style.backgroundColor = '#272727'
                     messages.textContent = "Cálculo realizado! (4 Odds)";
 
                     return
