@@ -510,12 +510,12 @@ footer {
         color: #171717;
         font-weight: 600;
         border-radius: 10px;
-        font-size: 12px;
+        font-size: 14px;
     }
     
     .odd::placeholder {
-    color: rgb(114, 114, 114);
-    font-weight: 300;
+        color: rgb(114, 114, 114);
+        font-weight: 300;
     }
 
     #total {
@@ -534,6 +534,7 @@ footer {
     #total::placeholder {
         color: rgb(114, 114, 114);
         font-weight: normal;
+        font-size: 14px;
     }
 
     .calcular {
@@ -566,7 +567,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .prob {
@@ -578,7 +579,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .how-it-works {
