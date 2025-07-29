@@ -16,7 +16,7 @@ body {
 
 #calc {
     width: 70%;
-    height: 400px;
+    height: 380px;
     padding: 0;
     margin: 0;
     display: flex;
@@ -89,7 +89,6 @@ textarea:focus, input:focus, select:focus {
     padding-bottom: 20px;
 }
 
-
 #messages {
     display: none;
     justify-content: center;
@@ -105,10 +104,6 @@ textarea:focus, input:focus, select:focus {
     color: rgb(255, 255, 255);
     font-size: 13px;
     animation: message 0.3s;
-}
-
-#messages-mobile {
-    display: none;
 }
 
 @keyframes message {
@@ -368,71 +363,63 @@ footer {
 @media screen and (max-width: 900px) {
     
     main {
-        padding-top: 80px;
+        padding-top: 0px;
     }
+
     .top {
         display: flex;
         justify-content: space-between;
         font-family: "Poppins", sans-serif;
-        width: 80%;
+        width: 100%;
+        height: 156px;
         padding-bottom: 0px;
+        gap: 0px;
+        background-color: #e7e7e7;
+        align-items: center;
     }
     
     .text {
         font-family: "Poppins", sans-serif;
-        width: 90%;
+        width: 60%;
+        height: min-content;
         padding-bottom: 20px;
-    }
-    
-    #messages-mobile {
-        display: none;
+        padding-top: 20px;
+        background-color: #e7e7e7;
         justify-content: center;
         align-items: center;
-        text-align: center;
-        float: right;
-        width: 80%;
-        height: 100%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        position: relative;
-        border-radius: 15px;
-        margin: auto;
-        margin-top: 20px;
-        color: white;
-        font-size: 13px;
-        animation: message 0.3s;
     }
     
-    @keyframes message {
-        0% {
-            transform: translateX(-2%);
-        }
-        
-        25% {
-            transform: translateX(2%);
-        }
-    
-        50% {
-            transform: translateX(-2%);
-        }
-    
-        10% {
-            transform: translateX(2%);
-        }
-    }
-    
+    #messages {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    height: 156px;
+    border-radius: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #272727;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    animation: none;
+}
+
     .text h1 {
-        margin: 0;
-        font-size: 30px;
+        padding-left: 10%;
+        font-size: 25px;
         font-weight: 600;
         color: #171717;
         line-height: 35px;
     }
     
     .text p {
-        margin: 0;
+        padding-left: 10%;
         margin-top: 10px;
-        font-size: 12px;
+        font-size: 11px;
         color: #6d6d6d;
     }
     
@@ -444,52 +431,94 @@ footer {
         display: block;
     }
 
-    table {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        width: 80%;
-        border-collapse: collapse;
-        background-color: #f2f2f2;
-        border-radius: 15px;
-        overflow: hidden;
-    }
-    
-    th, td {
-        padding: 8px;
-        text-align: center;
-        font-size: 12px;
-    }
-    
-    input {
-        font-size: 13px;
-        color: #333;
-    }
-    
-    th {
-        background-color: #272727;
-        color: rgb(211, 211, 211);
-        font-weight: 400;
-        font-size: 13px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+    #calc {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    display: table-row;
+    border-radius: 0px;
+    gap: 10px;
+}
+
+.item-1 {
+    display: flex;
+    justify-content: center; /* alinha horizontalmente */
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: #eeeeee;
+    border-radius: 0px;
+}
+
+.results {
+    width: 100%;
+    height: min-content;
+    display: inline-flex;
+    flex-direction: row;
+    background-color: #eeeeee;
+    gap: 1px;
+}
+
+.result {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(228, 228, 228);
+    border-radius: 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.percentage {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(228, 228, 228);
+    border-radius: 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
     
-    tr:nth-child(even) {
-        background-color: #e7e7e7;
-    }
-    
-    .last-line {
-        background-color: #6d6d6d;
+    th {
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    color: #272727;
+    height: 40px;
+    vertical-align: top;
+    font-weight: 600;
+    font-size: 13px;
+    padding-bottom: 5px;
+}
 
-    }
+td {
+    padding: 0px 3px 0px 3px;
+    text-align: center;
+    color: rgb(158, 158, 158);
+    height: min-content;
+    vertical-align: top;
+}
+
+input {
+    font-size: 15px;
+    color: #333;
+}
+
+tr {
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+}
+
+tr:nth-child(even) {
+    background-color: #e7e7e7;
+}
+    
     
     .stake {
         font-weight: 600;
     }
     
     .odd {
-        width: 90%;
-        padding: 5px;
+        width: 100%;
+        padding: 0px;
         padding-right: 0;
         border: none;
         background-color: #fafafa;
@@ -500,86 +529,93 @@ footer {
     }
     
     .odd::placeholder {
-        color: rgb(114, 114, 114);
-        font-weight: 300;
-    }
-    
-    #divresult-mobile {
-        background-color: rgb(211, 211, 211);
-        font-weight: 600;
-    }
-    
-    #divpercentage-mobile {
-        background-color: rgb(211, 211, 211);
-        font-weight: 600;
-    }
-    
-    #total-mobile {
-        width: 100%;
-        padding: 8px 0px 8px 10px;
-        border: none;
-        font-weight: 600;
-        border-radius: 10px 0px 0px 10px;
-        background-color: #fafafa;
-        margin-right: 0px;
-        font-size: 12px;
-    }
-    
-    #total::placeholder {
-        color: rgb(114, 114, 114);
-        font-weight: normal;
-    }
-    
-    .button-calcular {
-        padding: 0!important;
-        background-color: #6d6d6d;
-    }
-    
-    .calcular {
-        background-color: #272727;
-        width: 90%;
-        float: left;
-        text-align: center;
-        border: none;
-        margin: 0;
-        color: #ffffff;
-        border-radius: 0px 10px 10px 0px;
-        padding: 8px;
-        font-size: 12px;
-        font-weight: 600;
-    }
-    
-    .calcular:hover {
-        color: white;
-    }
+    color: rgb(114, 114, 114);
+    font-weight: 300;
+}
 
+#total {
+    width: 100%;
+    height: 96%;
+    padding: 0px;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: #fafafa;
+    margin-top: 0;
+    text-align: center;
+}
 
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-    
-    .result-stake {
-        color: rgb(114, 114, 114);
-    }
-    
-    #result-mobile {
-        background-color: none;
-        color: rgb(114, 114, 114);
-        font-weight: normal;
-    }
-    
-    #percentage-mobile {
-        background-color: none;
-        color: rgb(114, 114, 114);
-        font-weight: normal;
-    }
-    
-    .prob {
-        background-color: none;
-        color: rgb(114, 114, 114);
-    }
+#total::placeholder {
+    color: rgb(114, 114, 114);
+    font-weight: normal;
+}
+
+.calcular {
+    background-color: #272727;
+    width: 100%;
+    height: 90%;
+    border: none;
+    color: #ffffff;
+    transition: color 0.1s;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.calcular:hover {
+    color: #b3b3b3;
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.result-stake {
+    background-color: rgb(228, 228, 228);
+    border-radius: 15px;
+    height: 90%;
+    color: rgb(114, 114, 114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+#result {
+    background-color: none;
+    color: rgb(114, 114, 114);
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#percentage {
+    background-color: none;
+    color: rgb(114, 114, 114);
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.prob {
+    background-color: rgb(228, 228, 228);
+    border-radius: 15px;
+    width: 100%;
+    height: 90%;
+    color: rgb(114, 114, 114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
 
     .how-it-works {
         width: 80%;
