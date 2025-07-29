@@ -2,7 +2,7 @@
     
     function calculate() {
 
-        const table = document.getElementById('table-desktop');
+        const table = document.getElementById('table');
 
         const form = document.getElementById('calc');
         const resultDiv = document.getElementById('result');

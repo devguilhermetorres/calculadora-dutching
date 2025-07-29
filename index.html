@@ -10,73 +10,64 @@
 <body>
 
     <main>
-        <div class="top">
-            <div class="text">
-                <h1>Calculadora Dutching</h1>
-                <p>Por github.com/devguilhermetorres</p>
-            </div>
-
-            <div id="messages">
-            </div>
+    <div class="top">
+        <div class="text">
+            <h1>Calculadora Dutching</h1>
+            <p>Por github.com/devguilhermetorres</p>
         </div>
 
-        <form id="calc">
+        <div id="messages">
+        </div>
+    </div>
 
-            <div class="item-1">
-
-                <table id="table-desktop">
-        <tr>
-            <th>Odds</th>
-            <th>Total</th>
-            <th>Probabilidade</th>
-            <th>Valor</th>
-        </tr>
-        
-        <tr>
-            <td><input type="text" placeholder="Odd 1" id="odd-1" class="odd" required></td>
-            <td rowspan="3"><input type="text" placeholder="Total (R$)" id="total" required></td>
-            <td><div id="percent-stakeA" class="prob">%</div></td>
-            <td><div id="result-stakeA" class="result-stake">0.00</div></td>
-        </tr>
-        <tr>
-            <td><input type="text" placeholder="Odd 2" id="odd-2" class="odd" required></td>
-            <td><div id="percent-stakeB" class="prob">%</div></td>
-            <td><div id="result-stakeB" class="result-stake">0.00</div></td>
-        </tr>
-        <tr>
-            <td><input type="text" placeholder="Odd 3" id="odd-3" class="odd"></td>
-            <td><div id="percent-stakeC" class="prob">%</div></td>
-            <td><div id="result-stakeC" class="result-stake">0.00</div></td>
-        </tr>
-        <tr class="last-line">
-            <td><input type="text" placeholder="Odd 4" id="odd-4" class="odd"></td>
-
-            <td class="button-calcular"><input type="submit" value="Calcular" id="calcular" class="calcular"></td>
-
-            <td><div id="percent-stakeD" class="prob">%</div></td>
-
-            <td><div id="result-stakeD" class="result-stake">0.00</div></td>
-        </tr>
-    </table>
-            </div>
-            <div class="results">
-                <div id="result" class="result">
-                    Resultado
-                </div>
-
-                <div id="percentage" class="percentage">
-                    % Ganhos
-                </div>
+    <form id="calc">
+        <div class="container">
+            <table id="table">
+                <tr>
+                    <th>Odds</th>
+                    <th>Total</th>
+                    <th>Probabilidade</th>
+                    <th>Valor</th>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Odd 1" id="odd-1" class="odd" required></td>
+                    <td rowspan="3"><input type="text" placeholder="Total (R$)" id="total" required></td>
+                    <td><div id="percent-stakeA" class="prob">%</div></td>
+                    <td><div id="result-stakeA" class="result-stake">0.00</div></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Odd 2" id="odd-2" class="odd" required></td>
+                    <td><div id="percent-stakeB" class="prob">%</div></td>
+                    <td><div id="result-stakeB" class="result-stake">0.00</div></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Odd 3" id="odd-3" class="odd"></td>
+                    <td><div id="percent-stakeC" class="prob">%</div></td>
+                    <td><div id="result-stakeC" class="result-stake">0.00</div></td>
+                </tr>
+                <tr class="last-line">
+                    <td><input type="text" placeholder="Odd 4" id="odd-4" class="odd"></td>
+                    <td class="button-calcular"><input type="submit" value="Calcular" id="calcular" class="calcular"></td>
+                    <td><div id="percent-stakeD" class="prob">%</div></td>
+                    <td><div id="result-stakeD" class="result-stake">0.00</div></td>
+                </tr>
+            </table>
+        </div>
+        <div class="results">
+            <div id="result" class="result">
+                Resultado
             </div>
 
+            <div id="percentage" class="percentage">
+                % Ganhos
+            </div>
+        </div>
     </form>
 
     <div class="how-it-works">
         <h2>Como a calculadora de apostas funciona?</h2>
         <p>Poder calcular até que ponto uma aposta pode ser lucrativa é um dos princípios básicos das apostas e a calculadora de apostas simplifica esse processo para os apostadores. Na prática, você verá que é muito fácil utilizar a calculadora dutching no dia a dia. Ela é dividida em colunas e linhas, e cada uma delas conta com uma função específica. <br><br>
-
         O tipo mais comum de aposta é a aposta simples, mas os apostadores também podem combinar variadas apostas e fazer uma aposta múltipla na calculadora dutching, por exemplo. Para usá-la:<br><br>
-            
         • O primeiro passo é você <b>colocar as odds</b> que desejar nos lugares indicados (odds 1, odds 2 e assim por diante).<br>
         • Feito isso, basta digitar o valor em unidades monetárias que será a aposta na parte inferior da calculadora dutching em <b>"Quantidade total a apostar"</b> .<br>
         • Depois clique em <b>"calcular"</b> .<br><br>
@@ -85,25 +76,11 @@
 
         <h2>Exemplo prático de uso da Calculadora Dutching</h2>
         <p>Por exemplo, em uma odd de 1.80 a probabilidade de êxito é de 55%. Já a terceira coluna indicará o quanto você deve apostar em determinada com base no seu investimento (valor total da aposta).<br><br>
-
         Se o resultado final do cálculo estiver na cor vermelha, isto indicará perdas. Agora, <b>se o resultado for verde, estamos falando em uma aposta segura.</b> O “resultado” é o valor final perdido ou ganho em unidades (stake) já a “% lucro” é a porcentagem do crescimento de banca que determinada aposta acrescentará.
         </p>
 
         <h2>Calcular apostas no modelo 1x2?</h2>
-        <p>São as apostas mais comuns no meio do futebol. Nesse molde, você deve colocar os valores da vitória do time mandante, do empate e da vitória do visitante em linhas diferentes de odds. Feito isso e após colocar o valor da aposta, basta clicar em “calcular” para verificar se é uma aposta segura.<br><br>
-
-        Vamos imaginar um confronto entre Internacional e Atlético Mineiro pelo Campeonato Brasileiro com o seguinte cenário: as odds para uma vitória Internacional é de 2.55, o valor das odds de empate é de 3.90 e as odds para o Atlético Mineiro vencer estão em 2.90. Além disso, serão investidas 50 unidades monetárias (que serão divididas nos três mercados de acordo com as probabilidades).<br><br>
-            
-        • Na opção 1, vitória do Internacional, você deve apostar um total de 19.74 unidades.<br>
-        • Na opção 2, empate, o valor é 12.91 unidades.<br>
-        • Na opção 3, vitória do Atlético Mineiro, você tem que apostar 17.36 unidades.<br><br>
-
-        Sendo assim, os benefícios são de 0.34 unidades positivas na banca e de 0.67 % de crescimento de banca. Além disso, com essa combinação você não perderia dinheiro. <br><br>
-            
-        E se fosse um evento com apenas duas opções? Bastaria realizar o mesmo procedimento, e você colocaria as odds somente em dois mercados ao invés de introduzir em três como no exemplo anterior.</p>
-
-    </div>
-    </main>
+        <p>São as apostas mais comuns no meio do
 
     <footer>
         <div class="footer-infos">
