@@ -542,15 +542,14 @@ footer {
         height: 90%;
         border: none;
         color: #ffffff;
-        transition: color 0.1s;
+        transition: none;
         border-radius: 15px;
         font-weight: 500;
         font-size: 13px;
     }
 
     .calcular:hover {
-        color: #b3b3b3;
-        cursor: pointer;
+        color: #ffffff;
     }
 
     input::-webkit-outer-spin-button,
