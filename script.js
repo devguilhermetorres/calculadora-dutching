@@ -14,8 +14,8 @@
 
         var messages = document.getElementById('messages');
 
-        const ColresultDiv = document.getElementById('divresult');
-        const ColpercentageDiv = document.getElementById('divpercentage');
+        const ColresultDiv = document.getElementById('result');
+        const ColpercentageDiv = document.getElementById('percentage');
         
         const percentageDiv = document.getElementById('percentage');
 
@@ -92,10 +92,10 @@
                     const profit = total * profitPercentage;
 
                     resultstakeADiv.style.fontWeight = '600';
-                    resultstakeADiv.style.color = '#171717';
+                    resultstakeADiv.style.color = '#272727';
 
                     resultstakeBDiv.style.fontWeight = '600';
-                    resultstakeBDiv.style.color = '#171717';
+                    resultstakeBDiv.style.color = '#272727';
 
                     resultstakeCDiv.style.fontWeight = 'normal';
                     resultstakeCDiv.style.color = 'rgb(114, 114, 114)';
@@ -104,16 +104,16 @@
                     resultstakeDDiv.style.color = 'rgb(114, 114, 114)';
 
                     resultDiv.style.fontWeight = '600';
-                    resultDiv.style.color = '#171717';
+                    resultDiv.style.color = '#272727';
 
                     percentageDiv.style.fontWeight = '600';
-                    percentageDiv.style.color = '#171717'
+                    percentageDiv.style.color = '#272727'
 
                     percentstakeADiv.style.fontWeight = '600';
-                    percentstakeADiv.style.color = '#171717'
+                    percentstakeADiv.style.color = '#272727'
 
                     percentstakeBDiv.style.fontWeight = '600';
-                    percentstakeBDiv.style.color = '#171717'
+                    percentstakeBDiv.style.color = '#272727'
 
                     percentstakeCDiv.style.fontWeight = 'normal';
                     percentstakeCDiv.style.color = 'rgb(114, 114, 114)'
@@ -122,10 +122,10 @@
                     percentstakeDDiv.style.color = 'rgb(114, 114, 114)'
 
                     textodd1.style.fontWeight = '600';
-                    textodd1.style.color = '#171717'
+                    textodd1.style.color = '#272727'
 
                     textodd2.style.fontWeight = '600';
-                    textodd2.style.color = '#171717'
+                    textodd2.style.color = '#272727'
 
                     textodd3.style.fontWeight = 'normal';
                     textodd3.style.color = 'rgb(114, 114, 114)'
@@ -153,11 +153,11 @@
                     `;
 
                     resultstakeADiv.innerHTML = `
-                    ${stakeA.toFixed(2)}
+                    R$ ${stakeA.toFixed(2)}
                     `;
 
                     resultstakeBDiv.innerHTML = `
-                    ${stakeB.toFixed(2)}
+                    R$ ${stakeB.toFixed(2)}
                     `;
 
                     resultstakeCDiv.innerHTML = `
@@ -169,7 +169,7 @@
                     `;
 
                     resultDiv.innerHTML = `
-                    ${profit.toFixed(2)}
+                    R$ ${profit.toFixed(2)}
                     `;
 
                     percentageDiv.innerHTML = `
@@ -221,43 +221,43 @@
                     const profit = total * profitPercentage;
 
                     resultstakeADiv.style.fontWeight = '600';
-                    resultstakeADiv.style.color = '#171717';
+                    resultstakeADiv.style.color = '#272727';
 
                     resultstakeBDiv.style.fontWeight = '600';
-                    resultstakeBDiv.style.color = '#171717';
+                    resultstakeBDiv.style.color = '#272727';
 
                     resultstakeCDiv.style.fontWeight = '600';
-                    resultstakeCDiv.style.color = '#171717';
+                    resultstakeCDiv.style.color = '#272727';
 
                     resultstakeDDiv.style.fontWeight = 'normal';
                     resultstakeDDiv.style.color = 'rgb(114, 114, 114)';
 
                     resultDiv.style.fontWeight = '600';
-                    resultDiv.style.color = '#171717';
+                    resultDiv.style.color = '#272727';
 
                     percentageDiv.style.fontWeight = '600';
-                    percentageDiv.style.color = '#171717'
+                    percentageDiv.style.color = '#272727'
 
                     percentstakeADiv.style.fontWeight = '600';
-                    percentstakeADiv.style.color = '#171717'
+                    percentstakeADiv.style.color = '#272727'
 
                     percentstakeBDiv.style.fontWeight = '600';
-                    percentstakeBDiv.style.color = '#171717'
+                    percentstakeBDiv.style.color = '#272727'
 
                     percentstakeCDiv.style.fontWeight = '600';
-                    percentstakeCDiv.style.color = '#171717'
+                    percentstakeCDiv.style.color = '#272727'
 
                     percentstakeDDiv.style.fontWeight = 'normal';
                     percentstakeDDiv.style.color = 'rgb(114, 114, 114)'
 
                     textodd1.style.fontWeight = '600';
-                    textodd1.style.color = '#171717'
+                    textodd1.style.color = '#272727'
 
                     textodd2.style.fontWeight = '600';
-                    textodd2.style.color = '#171717'
+                    textodd2.style.color = '#272727'
 
                     textodd3.style.fontWeight = '600';
-                    textodd3.style.color = '#171717'
+                    textodd3.style.color = '#272727'
 
                     textodd4.style.fontWeight = 'normal';
                     textodd4.style.color = 'rgb(114, 114, 114)'
@@ -283,15 +283,15 @@
                     `;
 
                     resultstakeADiv.innerHTML = `
-                    ${stakeA.toFixed(2)}
+                    R$ ${stakeA.toFixed(2)}
                     `;
 
                     resultstakeBDiv.innerHTML = `
-                    ${stakeB.toFixed(2)}
+                    R$ ${stakeB.toFixed(2)}
                     `;
 
                     resultstakeCDiv.innerHTML = `
-                    ${stakeC.toFixed(2)}
+                    R$ ${stakeC.toFixed(2)}
                     `;
 
                     resultstakeDDiv.innerHTML = `
@@ -299,8 +299,8 @@
                     `;
 
                     resultDiv.innerHTML = `
-                    ${profit.toFixed(2)}
-                    `;
+                    R$ ${profit.toFixed(2)}           
+                        `;
 
                     percentageDiv.innerHTML = `
                     ${profitPercentageInfo.toFixed(2)} %
@@ -349,46 +349,46 @@
                     const profit = total * profitPercentage;
 
                     resultstakeADiv.style.fontWeight = '600';
-                    resultstakeADiv.style.color = '#171717';
+                    resultstakeADiv.style.color = '#272727';
 
                     resultstakeBDiv.style.fontWeight = '600';
-                    resultstakeBDiv.style.color = '#171717';
+                    resultstakeBDiv.style.color = '#272727';
 
                     resultstakeCDiv.style.fontWeight = '600';
-                    resultstakeCDiv.style.color = '#171717';
+                    resultstakeCDiv.style.color = '#272727';
 
                     resultstakeDDiv.style.fontWeight = '600';
-                    resultstakeDDiv.style.color = '#171717';
+                    resultstakeDDiv.style.color = '#272727';
 
                     resultDiv.style.fontWeight = '600';
-                    resultDiv.style.color = '#171717';
+                    resultDiv.style.color = '#272727';
 
                     percentageDiv.style.fontWeight = '600';
-                    percentageDiv.style.color = '#171717'
+                    percentageDiv.style.color = '#272727'
 
                     percentstakeADiv.style.fontWeight = '600';
-                    percentstakeADiv.style.color = '#171717'
+                    percentstakeADiv.style.color = '#272727'
 
                     percentstakeBDiv.style.fontWeight = '600';
-                    percentstakeBDiv.style.color = '#171717'
+                    percentstakeBDiv.style.color = '#272727'
 
                     percentstakeCDiv.style.fontWeight = '600';
-                    percentstakeCDiv.style.color = '#171717'
+                    percentstakeCDiv.style.color = '#272727'
 
                     percentstakeDDiv.style.fontWeight = '600';
-                    percentstakeDDiv.style.color = '#171717'
+                    percentstakeDDiv.style.color = '#272727'
 
                     textodd1.style.fontWeight = '600';
-                    textodd1.style.color = '#171717'
+                    textodd1.style.color = '#272727'
 
                     textodd2.style.fontWeight = '600';
-                    textodd2.style.color = '#171717'
+                    textodd2.style.color = '#272727'
 
                     textodd3.style.fontWeight = '600';
-                    textodd3.style.color = '#171717'
+                    textodd3.style.color = '#272727'
 
                     textodd4.style.fontWeight = '600';
-                    textodd4.style.color = '#171717'
+                    textodd4.style.color = '#272727'
 
                     const percentA = (stakeA / total)*100;
                     const percentB = (stakeB / total)*100;
@@ -412,23 +412,23 @@
                     `;
 
                     resultstakeADiv.innerHTML = `
-                    ${stakeA.toFixed(2)}
+                    R$ ${stakeA.toFixed(2)}
                     `;
 
                     resultstakeBDiv.innerHTML = `
-                    ${stakeB.toFixed(2)}
+                    R$ ${stakeB.toFixed(2)}
                     `;
 
                     resultstakeCDiv.innerHTML = `
-                    ${stakeC.toFixed(2)}
+                    R$ ${stakeC.toFixed(2)}
                     `;
 
                     resultstakeDDiv.innerHTML = `
-                    ${stakeD.toFixed(2)}
+                    R$ ${stakeD.toFixed(2)}
                     `;
 
                     resultDiv.innerHTML = `
-                    ${profit.toFixed(2)}
+                    R$ ${profit.toFixed(2)}
                     `;
 
                     percentageDiv.innerHTML = `

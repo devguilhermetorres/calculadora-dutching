@@ -22,6 +22,7 @@
 
         <!-- MOBILE -->
 
+        <!--
         <table class="mobile" id="table-mobile">
             <form id="calc-mobile">
                 <thead>
@@ -76,13 +77,64 @@
         <div id="messages-mobile">
         </div> 
 
+        -->
+
         <!-- DESKTOP -->
 
-        <table class="desktop" id="table-desktop">
+        <form id="calc">
+
+            <div class="item-1">
+
+                <table id="table-desktop">
+        <tr>
+            <th>Odds</th>
+            <th>Total</th>
+            <th>Probabilidade</th>
+            <th>Valor por seleção</th>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Odd 1" id="odd-1" class="odd" required></td>
+            <td rowspan="3"><input type="text" placeholder="Total (R$)" id="total" required></td>
+            <td><div id="percent-stakeA" class="prob">%</div></td>
+            <td><div id="result-stakeA" class="result-stake">0.00</div></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Odd 2" id="odd-2" class="odd" required></td>
+            <td><div id="percent-stakeB" class="prob">%</div></td>
+            <td><div id="result-stakeB" class="result-stake">0.00</div></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Odd 3" id="odd-3" class="odd"></td>
+            <td><div id="percent-stakeC" class="prob">%</div></td>
+            <td><div id="result-stakeC" class="result-stake">0.00</div></td>
+        </tr>
+        <tr class="last-line">
+            <td><input type="text" placeholder="Odd 4" id="odd-4" class="odd"></td>
+
+            <td class="button-calcular"><input type="submit" value="Calcular" id="calcular" class="calcular"></td>
+
+            <td><div id="percent-stakeD" class="prob">%</div></td>
+
+            <td><div id="result-stakeD" class="result-stake">0.00</div></td>
+        </tr>
+    </table>
+            </div>
+            <div class="results">
+                <div id="result" class="result">
+                    Resultado
+                </div>
+
+                <div id="percentage" class="percentage">
+                    % Ganhos
+                </div>
+            </div>
+
+    </form>
+
+     <!--   <table class="desktop" id="table-desktop">
             <form id="calc">
                 <thead>
                     <tr>
-                        <th></th>
                         <th>Odds</th>
                         <th>% Probabilidade</th>
                         <th>Valor</th>
@@ -92,7 +144,6 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Aposta 1</td>
                         <td><input type="text" placeholder="0" id="odd-1" class="odd" required></td>
                         <td><div id="percent-stakeA" class="prob">%</div></td>
                         <td><div id="result-stakeA" class="result-stake">0.00</div></td>
@@ -100,19 +151,17 @@
                         <td rowspan="4" id="divpercentage"><div id="percentage">0.00 %</div></td>
                     </tr>
                     <tr>
-                        <td>Aposta 2</td>
                         <td><input type="text" placeholder="0" id="odd-2" class="odd" required></td>
                         <td><div id="percent-stakeB" class="prob">%</div></td>
                         <td><div id="result-stakeB" class="result-stake">0.00</div></td>
                     </tr>
                     <tr>
-                        <td>Aposta 3</td>
                         <td><input type="text" placeholder="0" id="odd-3" class="odd"></td>
                         <td><div id="percent-stakeC" class="prob">%</div></td>
                         <td><div id="result-stakeC" class="result-stake">0.00</div></td>
                     </tr>
                     <tr>
-                        <td>Aposta 4</td>
+
                         <td><input type="text" placeholder="0" id="odd-4" class="odd"></td>
                         <td><div id="percent-stakeD" class="prob">%</div></td>
                         <td><div id="result-stakeD" class="result-stake">0.00</div></td>
@@ -129,6 +178,7 @@
             </form>
         </table>
     
+        --> 
 
     <div class="how-it-works">
         <h2>Como a calculadora de apostas funciona?</h2>
