@@ -457,7 +457,8 @@ footer {
     display: inline-flex;
     flex-direction: row;
     background-color: #eeeeee;
-    gap: 1px;
+   
+    gap: 0px;
 }
 
 .result {
@@ -539,7 +540,7 @@ tr:nth-child(even) {
     padding: 0px;
     border: none;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 15px;
     background-color: #fafafa;
     margin-top: 0;
@@ -583,26 +584,6 @@ input::-webkit-inner-spin-button {
     justify-content: center;
     align-items: center;
     font-size: 15px;
-}
-
-#result {
-    background-color: none;
-    color: rgb(114, 114, 114);
-    font-weight: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-}
-
-#percentage {
-    background-color: none;
-    color: rgb(114, 114, 114);
-    font-weight: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
 }
 
 .prob {
